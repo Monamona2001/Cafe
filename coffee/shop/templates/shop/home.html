@@ -1,0 +1,156 @@
+{% extends 'shop/basic.html' %}
+
+
+ 
+<style>
+    {% block css %}
+    .slide {
+        height: 92vh;
+        width: 100%;
+        /* overflow: hidden; */
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 74%;
+        grid-template-rows: 100%;
+        overflow: hidden;
+        background-color:rgb(245, 208, 239);
+
+    }
+
+
+
+    .container {
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 80%;
+        place-content: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.63);
+        background-blend-mode: multiply;
+        animation: pageslide 30s linear infinite alternate;
+       
+
+    }
+    @keyframes pageslide {
+        0%{
+            transform: translate(0%);
+        }
+        20%{
+            transform: translate(-100%);
+        }
+        40%{
+            transform: translate(-200%);
+        }
+        60%{
+            transform: translate(-300%);
+        }
+        80%{
+            transform: translate(-400%);
+        }
+        100%{
+            transform: translate(-500%);
+        }
+    }
+    .blur{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+        backdrop-filter: blur(1px);
+    }
+
+    .container:nth-child(1) {
+        background-image: url("https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D");
+    }
+
+    .container:nth-child(2) {
+        background-image: url("https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D");
+    }
+
+    .container:nth-child(3) {
+        background-image: url("https://plus.unsplash.com/premium_photo-1663852297267-827c73e7529e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D");
+    }
+
+    .container:nth-child(4) {
+        background-image: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2R8ZW58MHx8MHx8fDA%3D");
+    }
+
+    .container:nth-child(5) {
+        background-image: url("https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    .container:nth-child(6) {
+        background-image: url("https://images.unsplash.com/photo-1572978841127-8883b88e85c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D");
+    }
+
+    .con {
+        color: white;
+        /* font-weight: 900; */
+        font-size: 30px;
+        width: 600px;
+        position: relative;
+    }
+    {% endblock %}
+</style>
+
+
+{% block body %}
+{% load static%}
+<div class="slide">
+
+<div class="container">
+    <div class="blur"></div>
+    <div class="con">
+        <!-- <img src="./img/img102.jpg" alt=""> -->
+        <h2>welcome to my world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusantium?</p>
+    </div>
+</div>
+<div class="container">
+    <div class="blur"></div>
+    <div class="con">
+        <!-- <img src="./img/img101.jpg" alt=""> -->
+        <h2>welcome </h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
+</div>
+<div class="container">
+    <div class="blur"></div>
+    <div class="con">
+        <!-- <img src="./img/img100.jpg" alt=""> -->
+        <h2>my world</h2>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+</div>
+<div class="container">
+    <div class="blur"></div>
+    <div class="con">
+        <!-- <img src="./img/img99.jpg" alt=""> -->
+        <h2>welcome to my world</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt ab veniam sunt?</p>
+    </div>
+</div>
+<div class="container">
+    <div class="blur"></div>
+    <div class="con">
+        <!-- <img src="./img/img98.jpg" alt=""> -->
+        <h2>welcome to my world</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse beatae magnam voluptatem.
+    </div>
+</div>
+<div class="container">
+    <div class="blur"></div>
+    <div class="con">
+        <!-- <img src="./img/img102.jpg" alt=""> -->
+        <h2>welcome to my world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit voluptatem quia
+            ea, laudantium qui?</p>
+    </div>
+</div>
+</div>
+
+{% endblock %}

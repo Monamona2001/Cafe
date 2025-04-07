@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bino</title>
+    <link rel="stylesheet" href="tamplate-9-practice.css">
+</head>
+<style>
+    body {
+    background: url('https://images.unsplash.com/photo-1504728078670-d0a59873c8c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG90JTIwYWlyJTIwYmFsb29ufGVufDB8fDB8fHww') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.a1 {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.priority {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.separator span {
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.red:hover {
+    background: darkred;
+}
+
+.outline {
+    border: 2px solid white;
+    color: white;
+    margin-left: 10px;
+}
+
+.outline:hover {
+    background: white;
+    color: black;
+}
+</style>
+<body>
+    <div class="a1">
+        <div class="content">
+            <p class="priority">Our Clients Are Our First Priority</p>
+            <h1>WELCOME <br> TO CAFE BUZZYBEE...</h1>
+            <div class="separator">
+                <span></span>
+                <div class="dot"></div>
+                <span></span>
+            </div>
+            <p class="description">
+                This Is How We Start Our Day.....
+            </p>
+            <div class="buttons">
+                <a href="/shop" class="btn red">USER</a>
+                <a href="/admin" class="btn outline">ADMIN</a>
+                <a href="/blog" class="btn red">BLOG</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

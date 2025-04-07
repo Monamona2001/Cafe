@@ -1,0 +1,36 @@
+{% extends 'shop/basic.html' %}
+{% block title %} About Us{% endblock %}
+<style>
+    {% block css %}
+        .hero{
+            position: absolute;
+            top: 67%;
+            left: 5%;
+            color: aliceblue;
+            width: 30%;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .heroimage img{
+            height: 92vh;
+            width: 100%;
+        }
+    {% endblock %}
+</style>
+      
+
+{% block body %}
+{% load static%}
+
+<div >
+    <div class="hero">
+        <h1>Discover the taste of real coffee.</h1>
+        <p></p>
+        <button>Learn More</button>
+    </div>
+    <div class="heroimage">
+        <img src="/static/shop/about1.jpg" alt="">
+    </div>
+</div>
+{% endblock body %}
+
